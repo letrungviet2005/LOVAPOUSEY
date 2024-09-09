@@ -15,32 +15,68 @@
 }
 
 .menu-list {
-    display: flex;
-    justify-content: space-around; 
-    gap: 2.2rem; 
-    padding-top: 1.5rem;
-}.menu-item {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.2rem;
+  padding-top: 1.5rem;
+}
+
+.menu-item {
   font-size: large;
   color: gray;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .menu-item:hover {
-  color: #000; 
+  color: #000;
 }
 
 .menu-list img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle; 
-    margin-top: 0.3rem;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: 0.3rem;
 }
 
 .logo {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .logo img {
-    width: 14rem;
-    height: auto;
+  width: 14rem;
+  height: auto;
+}
+
+/* Thêm các lớp CSS cho chế độ mobile */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-list-hidden {
+  display: none;
+}
+
+.menu-list-slide {
+  display: block;
+  animation: slideIn 0.3s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 850px) {
+  .menu-list {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
