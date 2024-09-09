@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 27px ; 
+    padding-right: 70px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around; 
+    gap: 2.2rem; 
+    padding-top: 1.5rem;
+}.menu-item {
+  font-size: large;
+  color: gray;
+  text-decoration: none; 
+}
+
+.menu-item:hover {
+  color: #000; 
+}
+
+.menu-list img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle; 
+    margin-top: 0.3rem;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 14rem;
+    height: auto;
+}

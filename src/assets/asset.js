@@ -1,9 +1,9 @@
 function asset() {
-  return (
+    return (
     <div>
-      <p>Chào</p>
+        <p>Chào</p>
     </div>
-  );
+    );
 }
 
 export default asset;
