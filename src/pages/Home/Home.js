@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames/bind";
 import style from "./Home.module.scss";
+import image1 from "../../assets/home/MES_8823.jpg";
 
 const cx = classNames.bind(style);
 
@@ -10,7 +11,7 @@ function Home() {
       <div className={cx("header")}>
         <div className={cx("title")}>
           <h2>
-            We create incredible video content,<br></br>
+            We create incredible<br></br> video content,<br></br>
             to help our clients stand out from the crowd.
           </h2>
         </div>
@@ -29,12 +30,16 @@ function Home() {
         </div>
       </div>
 
-      <div>
-        <p>Nơi chứa ảnh nè</p>
+      <div className={cx("content-image")}>
+        <img
+          style={{ width: "100%", height: "auto" }}
+          src={image1}
+          alt="image1"
+        />
       </div>
 
       <div className={cx("content-2")}>
-        <div className="container">
+        <div>
           {/* Hàng 1 */}
           <div className="row">
             <div className="col-md-6">
@@ -49,20 +54,67 @@ function Home() {
                 so we can share your message in the best way.
               </p>
             </div>
-            <div className="col-md-6">Cột 1.2</div>
+            <div className="col-md-6">
+              <img
+                style={{ width: "100%", height: "auto" }}
+                src={image1}
+                alt="image1"
+              />
+            </div>
           </div>
+          <div className={cx("space")}></div>
 
           {/* Hàng 2 */}
           <div className="row">
-            <div className="col-md-6">Cột 2.1</div>
-            <div className="col-md-6">Cột 2.2</div>
+            <div className="col-md-6">
+              <img
+                style={{ width: "100%", height: "auto" }}
+                src={image1}
+                alt="image1"
+              />
+            </div>
+            <div className="col-md-6">
+              <h2>We keep it simple.</h2>
+              <p>
+                We'll begin our conversations discussing your business goals,
+                priorities and what you would like to get out of a video
+                project. We plan everything that we need to shoot with you,
+                including any models, props and locations. Once all the filming
+                is complete we move onto the editing phase. We select the
+                perfect music and footage to work in parallel with your brand,
+                so we can share your message in the best way.
+              </p>
+            </div>
           </div>
+          <div className={cx("space")}></div>
 
           {/* Hàng 3 */}
           <div className="row">
-            <div className="col-md-6">Cột 3.1</div>
-            <div className="col-md-6">Cột 3.2</div>
+            <div className="col-md-6">
+              <h2>We keep it simple.</h2>
+              <p>
+                We'll begin our conversations discussing your business goals,
+                priorities and what you would like to get out of a video
+                project. We plan everything that we need to shoot with you,
+                including any models, props and locations. Once all the filming
+                is complete we move onto the editing phase. We select the
+                perfect music and footage to work in parallel with your brand,
+                so we can share your message in the best way.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <img
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderBottomRightRadius: "50%",
+                }}
+                src={image1}
+                alt="image1"
+              />
+            </div>
           </div>
+          <div className={cx("space")}></div>
         </div>
       </div>
     </div>
