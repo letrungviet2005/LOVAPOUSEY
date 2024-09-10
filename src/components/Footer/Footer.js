@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className={cx("footer")}>
       <div className={cx("row")}>
-        <div className={cx("col")}>
+        <div className={cx("col", "col-logo")}>
             <img src={logo} className={cx("logo")} alt="logo" />
         </div>
         <div className={cx("col")}>
