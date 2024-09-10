@@ -27,7 +27,7 @@ function Footer() {
             <Link to="#" className={cx("item")}><i class="fa-brands fa-linkedin"></i> Linkedin</Link>
         </div>
         <div className={cx("col")}>
-            <h3>Useful Links</h3>
+            <h3>Address</h3>
             <div className={cx("item")}><i class="fa-solid fa-location-dot"></i> Lien Chieu, Da Nang, Viet Nam</div>
             <div className={cx("item")}><i class="fa-solid fa-phone"></i> 0123456789</div>
             <div className={cx("item")}><i class="fa-solid fa-envelope"></i> info@masothue.com</div>
