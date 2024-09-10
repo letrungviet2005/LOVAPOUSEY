@@ -31,7 +31,7 @@ function Navbar() {
             <Link to="/" className={cx("menu-item")}>
               Home
             </Link>
-            <Link to="/Products" className={cx("menu-item")}>
+            <Link to="/portfolio" className={cx("menu-item")}>
               Portfolio
             </Link>
             <Link to="/Contact" className={cx("menu-item")}>
@@ -47,10 +47,10 @@ function Navbar() {
           <Link to="/" className={cx("menu-item-mobile")}>
             Home
           </Link>
-          <Link to="/" className={cx("menu-item-mobile")}>
+          <Link to="/portfolio" className={cx("menu-item-mobile")}>
             Portfolio
           </Link>
-          <Link to="/" className={cx("menu-item-mobile")}>
+          <Link to="/contact" className={cx("menu-item-mobile")}>
             Contact
           </Link>
           <div style={{ display: "flex" }}>
