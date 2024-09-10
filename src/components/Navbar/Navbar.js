@@ -14,29 +14,51 @@ function Navbar() {
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
+    console.log(menuVisible);
   };
 
   return (
-    <div className={cx("navbar")}>
-      <div className={cx("menu")}>
-        <div className={cx("logo")}>
-          <img src={logo} alt="logo" />
+    <div>
+      <div className={cx("navbar")}>
+        <div className={cx("menu")}>
+          <div className={cx("logo")}>
+            <img src={logo} alt="logo" />
+          </div>
+          <div className={cx("hamburger")} onClick={toggleMenu}>
+            <i className="fa-solid fa-bars"></i>
+          </div>
+          <div className={cx("menu-list")}>
+            <Link to="/" className={cx("menu-item")}>
+              Home
+            </Link>
+            <Link to="/Products" className={cx("menu-item")}>
+              Portfolio
+            </Link>
+            <Link to="/Contact" className={cx("menu-item")}>
+              Contact
+            </Link>
+            <img src={facebook} alt="facebook" />
+            <img src={instagram} alt="instagram" />
+          </div>
         </div>
-        <div className={cx("hamburger")} onClick={toggleMenu}>
-          <i className="fa-solid fa-bars"></i>
-        </div>
-        <div className={cx("menu-list", { "menu-list-slide": menuVisible })}>
-          <Link to="/" className={cx("menu-item")}>
+      </div>
+      <div className={cx("menu-mobile", { hidden: !menuVisible })}>
+        <div className={cx("menu-list-mobile")}>
+          <Link to="/" className={cx("menu-item-mobile")}>
             Home
           </Link>
-          <Link to="/Products" className={cx("menu-item")}>
+          <Link to="/" className={cx("menu-item-mobile")}>
             Portfolio
           </Link>
-          <Link to="/Contact" className={cx("menu-item")}>
+          <Link to="/" className={cx("menu-item-mobile")}>
             Contact
           </Link>
-          <img src={facebook} alt="facebook" />
-          <img src={instagram} alt="instagram" />
+          <div style={{ display: "flex" }}>
+            <div className={cx("menu-social-mobile")}>
+              <img src={facebook} alt="facebook" />
+              <img src={instagram} alt="instagram" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
