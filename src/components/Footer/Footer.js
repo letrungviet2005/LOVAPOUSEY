@@ -15,22 +15,41 @@ function Footer() {
             <img src={logo} className={cx("logo")} alt="logo" />
         </div>
         <div className={cx("col")}>
-            <h3>Useful Links</h3>
-            <Link to="/" className={cx("item")}>Home</Link>
-            <Link to="/Products" className={cx("item")}>Portfolio</Link>
-            <Link to="/Contact" className={cx("item")}>Contact</Link>
+          <h3>Useful Links</h3>
+          <Link to="/" className={cx("item")}>
+            Home
+          </Link>
+          <Link to="/Products" className={cx("item")}>
+            Portfolio
+          </Link>
+          <Link to="/Contact" className={cx("item")}>
+            Contact
+          </Link>
         </div>
         <div className={cx("col")}>
-            <h3>Follow Us</h3>
-            <Link to="#" className={cx("item")}><i class="fa-brands fa-square-facebook"></i> Facebook</Link>
-            <Link to="#" className={cx("item")}><i class="fa-brands fa-square-instagram"></i> Instagram</Link>
-            <Link to="#" className={cx("item")}><i class="fa-brands fa-linkedin"></i> Linkedin</Link>
+          <h3>Follow Us</h3>
+          <Link to="#" className={cx("item")}>
+            <i class="fa-brands fa-square-facebook"></i> Facebook
+          </Link>
+          <Link to="#" className={cx("item")}>
+            <i class="fa-brands fa-square-instagram"></i> Instagram
+          </Link>
+          <Link to="#" className={cx("item")}>
+            <i class="fa-brands fa-linkedin"></i> Linkedin
+          </Link>
         </div>
         <div className={cx("col")}>
-            <h3>Address</h3>
-            <div className={cx("item")}><i class="fa-solid fa-location-dot"></i> Lien Chieu, Da Nang, Viet Nam</div>
-            <div className={cx("item")}><i class="fa-solid fa-phone"></i> 0123456789</div>
-            <div className={cx("item")}><i class="fa-solid fa-envelope"></i> info@masothue.com</div>
+          <h3>Address</h3>
+          <div className={cx("item")}>
+            <i class="fa-solid fa-location-dot"></i> Lien Chieu, Da Nang, Viet
+            Nam
+          </div>
+          <div className={cx("item")}>
+            <i class="fa-solid fa-phone"></i> 0123456789
+          </div>
+          <div className={cx("item")}>
+            <i class="fa-solid fa-envelope"></i> info@masothue.com
+          </div>
         </div>
       </div>
       <div className={cx("bottom")}>
