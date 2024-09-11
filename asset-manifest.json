@@ -1,22 +1,33 @@
 {
   "files": {
-    "main.css": "/LOVAPOUSEY/static/css/main.a5cf764f.css",
-    "main.js": "/LOVAPOUSEY/static/js/main.f0e811ab.js",
-    "static/js/453.ec6c1092.chunk.js": "/LOVAPOUSEY/static/js/453.ec6c1092.chunk.js",
+    "main.css": "/LOVAPOUSEY/static/css/main.ffd4c7c7.css",
+    "main.js": "/LOVAPOUSEY/static/js/main.4d570346.js",
+    "static/js/453.e30fb012.chunk.js": "/LOVAPOUSEY/static/js/453.e30fb012.chunk.js",
+    "static/media/MES_8827.jpg": "/LOVAPOUSEY/static/media/MES_8827.421349aa82951db75d97.jpg",
+    "static/media/MES_8861.jpg": "/LOVAPOUSEY/static/media/MES_8861.d66deee575c10abd8329.jpg",
     "static/media/MES_8839.jpg": "/LOVAPOUSEY/static/media/MES_8839.a0d8ecbdd0aa193bc071.jpg",
+    "static/media/MES_8855.jpg": "/LOVAPOUSEY/static/media/MES_8855.1ffa6dea120069e3bef0.jpg",
+    "static/media/MES_8863.jpg": "/LOVAPOUSEY/static/media/MES_8863.e4e285cbe2f3b4ba2b64.jpg",
+    "static/media/MES_8860.jpg": "/LOVAPOUSEY/static/media/MES_8860.9e8526bfaf843647db79.jpg",
+    "static/media/MES_8808.jpg": "/LOVAPOUSEY/static/media/MES_8808.beb7d4105427f23fd1c0.jpg",
+    "static/media/MES_8858.jpg": "/LOVAPOUSEY/static/media/MES_8858.fdcb4463656337ea9127.jpg",
+    "static/media/MES_8843.jpg": "/LOVAPOUSEY/static/media/MES_8843.78b7990fe00e42889de4.jpg",
+    "static/media/MES_8847.jpg": "/LOVAPOUSEY/static/media/MES_8847.0ce83cbdb67dff2b9288.jpg",
     "static/media/MES_8816.jpg": "/LOVAPOUSEY/static/media/MES_8816.3e3dba98d934210dc930.jpg",
+    "static/media/MES_8828.jpg": "/LOVAPOUSEY/static/media/MES_8828.2667da617560d1c39f89.jpg",
+    "static/media/MES_8850.jpg": "/LOVAPOUSEY/static/media/MES_8850.f6ff922851c080a0b258.jpg",
+    "static/media/MES_8846.jpg": "/LOVAPOUSEY/static/media/MES_8846.c52c2c23e77959f31d0d.jpg",
     "static/media/MES_8823.jpg": "/LOVAPOUSEY/static/media/MES_8823.54b2dc748d97b746922b.jpg",
-    "static/media/MES_8832.jpg": "/LOVAPOUSEY/static/media/MES_8832.4d00451ab9d069b2dd6b.jpg",
     "static/media/MES_8833.jpg": "/LOVAPOUSEY/static/media/MES_8833.ff48f119fdb880d1bf17.jpg",
+    "static/media/MES_8832.jpg": "/LOVAPOUSEY/static/media/MES_8832.4d00451ab9d069b2dd6b.jpg",
     "static/media/fa-solid-900.ttf": "/LOVAPOUSEY/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/LOVAPOUSEY/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/LOVAPOUSEY/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/fa-brands-400.woff2": "/LOVAPOUSEY/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/logo_bg.png": "/LOVAPOUSEY/static/media/logo_bg.95316fd591c34568aaf5.png",
     "static/media/fa-regular-400.ttf": "/LOVAPOUSEY/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
-    "static/media/logo.png": "/LOVAPOUSEY/static/media/logo.bdd56b5a33cccd51e0e5.png",
     "static/media/fa-regular-400.woff2": "/LOVAPOUSEY/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
-    "static/media/logo_footer_bg.png": "/LOVAPOUSEY/static/media/logo_footer_bg.aaded8cbba0f4290860c.png",
+    "static/media/logo_footer_bg.png": "/LOVAPOUSEY/static/media/logo_footer_bg.1c26a39af9b6d8775aa5.png",
     "static/media/fa-v4compatibility.ttf": "/LOVAPOUSEY/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/LOVAPOUSEY/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "static/media/slick.svg": "/LOVAPOUSEY/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -26,12 +37,12 @@
     "static/media/instagram.svg": "/LOVAPOUSEY/static/media/instagram.90a80cd5b9a105845e0d07f0cdaf509b.svg",
     "index.html": "/LOVAPOUSEY/index.html",
     "static/media/facebook.svg": "/LOVAPOUSEY/static/media/facebook.c719a013d9be7d611d2dd9e1fa4ecf06.svg",
-    "main.a5cf764f.css.map": "/LOVAPOUSEY/static/css/main.a5cf764f.css.map",
-    "main.f0e811ab.js.map": "/LOVAPOUSEY/static/js/main.f0e811ab.js.map",
-    "453.ec6c1092.chunk.js.map": "/LOVAPOUSEY/static/js/453.ec6c1092.chunk.js.map"
+    "main.ffd4c7c7.css.map": "/LOVAPOUSEY/static/css/main.ffd4c7c7.css.map",
+    "main.4d570346.js.map": "/LOVAPOUSEY/static/js/main.4d570346.js.map",
+    "453.e30fb012.chunk.js.map": "/LOVAPOUSEY/static/js/453.e30fb012.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5cf764f.css",
-    "static/js/main.f0e811ab.js"
+    "static/css/main.ffd4c7c7.css",
+    "static/js/main.4d570346.js"
   ]
 }
