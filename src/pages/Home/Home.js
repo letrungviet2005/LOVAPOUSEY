@@ -6,10 +6,12 @@ import image2 from "../../assets/home/MES_8816.jpg";
 import image3 from "../../assets/home/MES_8832.jpg";
 import image4 from "../../assets/home/MES_8846.jpg";
 import image5 from "../../assets/home/MES_8833.jpg";
+import image6 from "../../assets/home/MES_8839.jpg";
 import Cookies from "js-cookie";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useSpring, animated } from "@react-spring/web"; // Import react-spring
 import "./Home.css";
 
 const cx = classNames.bind(style);
@@ -54,7 +56,7 @@ function Home() {
       description:
         "Tại Lovapousey, chúng tôi kết hợp nghệ thuật và kiến trúc, tạo ra những thiết kế sáng tạo và bền vững, vừa có tính thẩm mỹ vượt trội vừa đảm bảo công năng. Cam kết của chúng tôi là mang đến những kiệt tác kiến trúc, nổi bật nhưng vẫn hòa hợp với môi trường xung quanh.",
       section1: {
-        heading: "Chúng tôi thiết kế với mục đích.",
+        heading: "Hướng đến khách hàng.",
         text: "Cách tiếp cận kiến trúc của chúng tôi không chỉ dừng lại ở việc xây dựng, mà còn là tạo ra không gian nâng cao chất lượng sống của người sử dụng. Từ ý tưởng đến hoàn thiện, chúng tôi tập trung vào tính bền vững, sự đổi mới và thẩm mỹ, nhằm đảm bảo mỗi dự án không chỉ đáp ứng mục tiêu mà còn truyền cảm hứng.",
       },
       section2: {
@@ -97,103 +99,148 @@ function Home() {
     arrows: false,
   };
 
+  // Define spring effects
+  const fadeIn = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1000 },
+  });
+  const fadeInDelay = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1000 },
+    delay: 500,
+  });
+
   return (
     <div className={cx("container")}>
-      <div className={cx("header")}>
-        <div className={cx("title")}>
-          <h2>{selectedContent.title}</h2>
+      <animated.div style={fadeIn}>
+        <div className={cx("header")}>
+          <div className={cx("title")}>
+            <h2>{selectedContent.title}</h2>
+          </div>
+          <div className={cx("content-1")}>
+            <p>{selectedContent.description}</p>
+          </div>
+          <div className={cx("language")}>
+            <button onClick={() => setLanguageAndCookie("VietNam")}>
+              VietNam
+            </button>
+            <button onClick={() => setLanguageAndCookie("English")}>
+              English
+            </button>
+            <button onClick={() => setLanguageAndCookie("Japan")}>Japan</button>
+          </div>
         </div>
-        <div className={cx("content-1")}>
-          <p>{selectedContent.description}</p>
-        </div>
-        <div className={cx("language")}>
-          <button onClick={() => setLanguageAndCookie("VietNam")}>
-            VietNam
-          </button>
-          <button onClick={() => setLanguageAndCookie("English")}>
-            English
-          </button>
-          <button onClick={() => setLanguageAndCookie("Japan")}>Japan</button>
-        </div>
-      </div>
+      </animated.div>
 
       <div className={cx("content-image")}>
         <Slider {...settings}>
           <div>
             <img
-              style={{ width: "100%", height: "auto" }}
-              src={image1}
+              className={cx("carousel-image")}
+              src={image6}
               alt="Architecture 1"
             />
           </div>
           <div>
             <img
-              style={{ width: "100%", height: "auto" }}
+              className={cx("carousel-image")}
               src={image2}
               alt="Architecture 2"
             />
           </div>
           <div>
             <img
-              style={{ width: "100%", height: "auto" }}
-              src={image4}
+              className={cx("carousel-image")}
+              src={image3}
               alt="Architecture 3"
             />
           </div>
         </Slider>
       </div>
 
-      <div className={cx("content-2")}>
-        <div>
-          {/* Row 1 */}
-          <div className="row">
-            <div className="col-md-6">
-              <h1>{selectedContent.section1.heading}</h1>
-              <p>{selectedContent.section1.text}</p>
-            </div>
-            <div className="col-md-6">
-              <img
-                style={{ width: "100%", height: "auto" }}
-                src={image1}
-                alt="Architecture Concept"
-              />
-            </div>
-          </div>
-          <div className={cx("space")}></div>
-
-          {/* Row 2 */}
-          <div className="row">
-            <div className="col-md-6">
-              <img
-                style={{ width: "100%", height: "auto" }}
-                src={image3}
-                alt="Architecture Design"
-              />
-            </div>
-            <div className="col-md-6">
-              <h1>{selectedContent.section2.heading}</h1>
-              <p>{selectedContent.section2.text}</p>
-            </div>
-          </div>
-          <div className={cx("space")}></div>
-
-          {/* Row 3 */}
-          <div className="row">
-            <div className="col-md-6">
-              <h1>{selectedContent.section3.heading}</h1>
-              <p>{selectedContent.section3.text}</p>
-            </div>
-            <div className="col-md-6">
-              <img
-                style={{ width: "100%", height: "auto" }}
-                src={image5}
-                alt="Architectural Tradition"
-              />
-            </div>
-          </div>
-          <div className={cx("space")}></div>
-        </div>
+      <div style={{ width: "100%", height: "auto" }}>
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src={image4}
+          alt="Architecture 4"
+        />
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src={image4}
+          alt="Architecture 5"
+        />
       </div>
+
+      <animated.div style={fadeInDelay}>
+        <div className={cx("content-2")}>
+          <div>
+            {/* Row 1 */}
+            <div className="row">
+              <div className="col-md-6">
+                <h1 className={cx("content-mother")}>
+                  {selectedContent.section1.heading}
+                </h1>
+                <div className={cx("content-children")}>
+                  <p>{selectedContent.section1.text}</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <img
+                  className={cx("image-content")}
+                  src={image1}
+                  alt="Architecture Concept"
+                />
+              </div>
+            </div>
+            <div className={cx("space")}></div>
+
+            {/* Row 2 */}
+            <div className="row">
+              <div className="col-md-6">
+                <img
+                  className={cx("image-content")}
+                  src={image2}
+                  alt="Architecture Design"
+                />
+              </div>
+              <div className="col-md-6">
+                <h1 className={cx("content-mother")}>
+                  {selectedContent.section2.heading}
+                </h1>
+                <div className={cx("content-children")}>
+                  <p>{selectedContent.section2.text}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={cx("space")}></div>
+
+            {/* Row 3 */}
+            <div className="row">
+              <div className="col-md-6">
+                <h1 className={cx("content-mother")}>
+                  {selectedContent.section3.heading}
+                </h1>
+                <div className={cx("content-children")}>
+                  <p>{selectedContent.section3.text}</p>
+                </div>
+                <button>Liên hệ</button>
+              </div>
+              <div className="col-md-6">
+                <img
+                  className={cx("image-content")}
+                  style={{ width: "100%", height: "auto" }}
+                  src={image5}
+                  alt="Architectural Tradition"
+                />
+              </div>
+            </div>
+            <div className={cx("space")}></div>
+          </div>
+        </div>
+      </animated.div>
     </div>
   );
 }
