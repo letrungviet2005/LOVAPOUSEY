@@ -12,11 +12,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useSpring, animated } from "@react-spring/web"; // Import react-spring
 import "./Home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const cx = classNames.bind(style);
 
 function Home() {
   const [language, setLanguage] = useState("English");
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   useEffect(() => {
     const savedLanguage = Cookies.get("language");
@@ -29,11 +34,6 @@ function Home() {
     setLanguage(lang);
     Cookies.set("language", lang, { expires: 365 });
   };
-  const fade = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 1000 },
-  });
 
   const content = {
     English: {
@@ -103,21 +103,9 @@ function Home() {
     arrows: false,
   };
 
-  const fadeIn = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 1000 },
-  });
-  const fadeInDelay = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 1000 },
-    delay: 100,
-  });
-
   return (
     <div className={cx("container")}>
-      <animated.div style={fadeIn}>
+      <animated.div data-aos="fade-up">
         <div className={cx("header")}>
           <div className={cx("title")}>
             <h2>{selectedContent.title}</h2>
@@ -168,11 +156,11 @@ function Home() {
         </Slider>
       </div>
 
-      <animated.div style={fadeInDelay}>
+      <animated.div data-aos="fade-up">
         <div className={cx("content-2")}>
           <div>
             {/* Row 1 */}
-            <div className="row">
+            <div data-aos="fade-up" className="row">
               <div className="col-md-5">
                 <h1 className={cx("content-mother")}>
                   {selectedContent.section1.heading}
@@ -192,7 +180,7 @@ function Home() {
             <div className={cx("space")}></div>
 
             {/* Row 2 */}
-            <div className="row">
+            <div data-aos="fade-up" className="row">
               <div className="col-md-6">
                 <img
                   className={cx("image-content")}
@@ -213,7 +201,7 @@ function Home() {
             <div className={cx("space")}></div>
 
             {/* Row 3 */}
-            <div className="row">
+            <div data-aos="fade-up" className="row">
               <div className="col-md-5">
                 <h1 className={cx("content-mother")}>
                   {selectedContent.section3.heading}

@@ -6,11 +6,13 @@ import Products from "../src/pages/Products/Products.js";
 import Contact from "../src/pages/Contact/Contact.js";
 import Home from "../src/pages/Home/Home.js";
 import CardDeatail from "../src/pages/Products/List/CardDeatail/CardDeatail.js";
+import ScrollToTop from "../src/components/ScrollToTop/ScrollToTop.js";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Products />} />

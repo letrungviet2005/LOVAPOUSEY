@@ -6,6 +6,8 @@ import logo from "../../assets/images/logo_bg.png";
 import style from "./Navbar.module.scss";
 import facebook from "../../assets/images/facebook.svg";
 import instagram from "../../assets/images/instagram.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const cx = classNames.bind(style);
 
@@ -36,6 +38,10 @@ function Navbar() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
