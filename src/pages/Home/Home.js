@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames/bind";
 import style from "./Home.module.scss";
-import { useInView } from "react-intersection-observer";
 import image1 from "../../assets/home/MES_8823.jpg";
 import image2 from "../../assets/home/MES_8816.jpg";
 import image3 from "../../assets/home/MES_8832.jpg";
-import image4 from "../../assets/home/MES_8846.jpg";
 import image5 from "../../assets/home/MES_8833.jpg";
 import image6 from "../../assets/home/MES_8839.jpg";
-import video from "../../assets/videos/backgound_trangchu.mp4";
 import Cookies from "js-cookie";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -106,7 +103,6 @@ function Home() {
     arrows: false,
   };
 
-  // Define spring effects
   const fadeIn = useSpring({
     opacity: 1,
     from: { opacity: 0 },
