@@ -1,12 +1,10 @@
 {
   "files": {
     "main.css": "/LOVAPOUSEY/static/css/main.a5cf764f.css",
-    "main.js": "/LOVAPOUSEY/static/js/main.c0a166fd.js",
+    "main.js": "/LOVAPOUSEY/static/js/main.f0e811ab.js",
     "static/js/453.ec6c1092.chunk.js": "/LOVAPOUSEY/static/js/453.ec6c1092.chunk.js",
-    "static/media/backgound_trangchu.mp4": "/LOVAPOUSEY/static/media/backgound_trangchu.cef8509e93a2edd04a78.mp4",
     "static/media/MES_8839.jpg": "/LOVAPOUSEY/static/media/MES_8839.a0d8ecbdd0aa193bc071.jpg",
     "static/media/MES_8816.jpg": "/LOVAPOUSEY/static/media/MES_8816.3e3dba98d934210dc930.jpg",
-    "static/media/MES_8846.jpg": "/LOVAPOUSEY/static/media/MES_8846.c52c2c23e77959f31d0d.jpg",
     "static/media/MES_8823.jpg": "/LOVAPOUSEY/static/media/MES_8823.54b2dc748d97b746922b.jpg",
     "static/media/MES_8832.jpg": "/LOVAPOUSEY/static/media/MES_8832.4d00451ab9d069b2dd6b.jpg",
     "static/media/MES_8833.jpg": "/LOVAPOUSEY/static/media/MES_8833.ff48f119fdb880d1bf17.jpg",
@@ -29,11 +27,11 @@
     "index.html": "/LOVAPOUSEY/index.html",
     "static/media/facebook.svg": "/LOVAPOUSEY/static/media/facebook.c719a013d9be7d611d2dd9e1fa4ecf06.svg",
     "main.a5cf764f.css.map": "/LOVAPOUSEY/static/css/main.a5cf764f.css.map",
-    "main.c0a166fd.js.map": "/LOVAPOUSEY/static/js/main.c0a166fd.js.map",
+    "main.f0e811ab.js.map": "/LOVAPOUSEY/static/js/main.f0e811ab.js.map",
     "453.ec6c1092.chunk.js.map": "/LOVAPOUSEY/static/js/453.ec6c1092.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5cf764f.css",
-    "static/js/main.c0a166fd.js"
+    "static/js/main.f0e811ab.js"
   ]
 }
