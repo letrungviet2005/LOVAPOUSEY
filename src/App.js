@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "../src/components/Navbar/Navbar.js";
 import Footer from "../src/components/Footer/Footer.js";
 import Products from "../src/pages/Products/Products.js";
@@ -9,7 +9,7 @@ import CardDeatail from "../src/pages/Products/List/CardDeatail/CardDeatail.js";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/detail" element={<CardDeatail />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
