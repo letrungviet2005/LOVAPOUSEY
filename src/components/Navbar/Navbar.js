@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import classNames from "classnames/bind";
@@ -12,10 +12,31 @@ const cx = classNames.bind(style);
 function Navbar() {
   const [menuVisible, setMenuVisible] = useState(false);
 
+  // Toggle menu khi nhấp vào icon hamburger
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
-    console.log(menuVisible);
   };
+
+  // Đóng menu khi nhấp vào bất kỳ link nào
+  const closeMenu = () => {
+    setMenuVisible(false);
+  };
+
+  // Đóng menu khi thay đổi kích thước màn hình
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 767.8) {
+        setMenuVisible(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Dọn dẹp event listener khi component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div>
@@ -43,15 +64,25 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div className={cx("menu-mobile", { hidden: !menuVisible })}>
+        {/* Thêm lớp "open" khi menuVisible là true */}
+        <div className={cx("menu-mobile", { open: menuVisible })}>
           <div className={cx("menu-list-mobile")}>
-            <Link to="/" className={cx("menu-item-mobile")}>
+            {/* Nhấp vào link sẽ tự động đóng menu */}
+            <Link to="/" className={cx("menu-item-mobile")} onClick={closeMenu}>
               Home
             </Link>
-            <Link to="/portfolio" className={cx("menu-item-mobile")}>
+            <Link
+              to="/portfolio"
+              className={cx("menu-item-mobile")}
+              onClick={closeMenu}
+            >
               Portfolio
             </Link>
-            <Link to="/contact" className={cx("menu-item-mobile")}>
+            <Link
+              to="/contact"
+              className={cx("menu-item-mobile")}
+              onClick={closeMenu}
+            >
               Contact
             </Link>
             <div style={{ display: "flex" }}>

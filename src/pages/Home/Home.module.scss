@@ -29,6 +29,7 @@
 .language {
     width: auto;
 }.content-image {
+    width: 100%;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -66,23 +67,67 @@ button {
 
 
 @media screen and (max-width: 1599.8px) {
-  
+    .title {
+    font-size: 35px;
+    width: 58%;
+}.title h2{
+    font-weight: 600;
+    font-size: 55px;
+}
 }
 
 @media screen and (max-width: 1199.8px) {
-
+.title {
+    font-size: 35px;
+    width: 64%;
+}.title h2{
+    font-weight: 600;
+    font-size: 50px;
+}
 }
 
 @media screen and (max-width: 991.8px) {
-  
+  .title {
+    font-size: 35px;
+    width: 74%;
+}.title h2{
+    font-weight: 600;
+    font-size: 45px;
+}.header {
+    padding-left: 50px;
+    padding-right: 50px;
+}.content-2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
 }
 
 @media screen and (max-width: 767.8px){
-  
+    .title {
+    font-size: 35px;
+    width: 84%;
+}.title h2{
+    font-weight: 600;
+    font-size: 40px;
+}
 }
 
 @media screen and (max-width: 575.8px){
-  
+  .title {
+    font-size: 35px;
+    width: 100%;
+}.title h2{
+    font-weight: 600;
+    font-size: 35px;
+}.header {
+    padding-left: 20px;
+    padding-right: 20px;
+}.content-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
 }
 
 @media screen and (max-width: 449.8px){
