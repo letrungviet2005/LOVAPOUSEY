@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import classNames from "classnames/bind";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo_bg.png";
 import style from "./Navbar.module.scss";
 import facebook from "../../assets/images/facebook.svg";
 import instagram from "../../assets/images/instagram.svg";
