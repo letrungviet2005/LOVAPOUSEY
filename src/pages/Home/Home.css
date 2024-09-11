@@ -5,8 +5,8 @@
     margin-right: 0;
 }@media screen and (max-width: 575.8px){
   .row {
-  border: 1px solid rgb(224, 224, 224); 
-  box-shadow: 4px 4px 10px rgba(72, 72, 72, 0.5); 
+  border: 1px solid rgb(233, 233, 233); 
+  box-shadow: 4px 4px 10px rgba(155, 155, 155, 0.5); 
   padding: 10px;
   border-radius : 10px;
 }
