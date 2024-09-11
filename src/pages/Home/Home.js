@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames/bind";
 import style from "./Home.module.scss";
+import { useInView } from "react-intersection-observer";
 import image1 from "../../assets/home/MES_8823.jpg";
 import image2 from "../../assets/home/MES_8816.jpg";
 import image3 from "../../assets/home/MES_8832.jpg";
 import image4 from "../../assets/home/MES_8846.jpg";
 import image5 from "../../assets/home/MES_8833.jpg";
 import image6 from "../../assets/home/MES_8839.jpg";
+import video from "../../assets/videos/backgound_trangchu.mp4";
 import Cookies from "js-cookie";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -30,6 +32,11 @@ function Home() {
     setLanguage(lang);
     Cookies.set("language", lang, { expires: 365 });
   };
+  const fade = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1000 },
+  });
 
   const content = {
     English: {
@@ -109,7 +116,7 @@ function Home() {
     opacity: 1,
     from: { opacity: 0 },
     config: { duration: 1000 },
-    delay: 500,
+    delay: 100,
   });
 
   return (
@@ -135,7 +142,7 @@ function Home() {
       </animated.div>
 
       <div className={cx("content-image")}>
-        <Slider {...settings}>
+        <Slider {...settings} style={{ zIndex: -1 }}>
           <div>
             <img
               className={cx("carousel-image")}
@@ -145,8 +152,13 @@ function Home() {
           </div>
           <div>
             <img
-              className={cx("carousel-image")}
+              className={cx("carousel-image-1")}
               src={image2}
+              alt="Architecture 2"
+            />
+            <img
+              className={cx("carousel-image-2")}
+              src={image1}
               alt="Architecture 2"
             />
           </div>
@@ -160,25 +172,12 @@ function Home() {
         </Slider>
       </div>
 
-      <div style={{ width: "100%", height: "auto" }}>
-        <img
-          style={{ width: "100%", height: "100%" }}
-          src={image4}
-          alt="Architecture 4"
-        />
-        <img
-          style={{ width: "100%", height: "100%" }}
-          src={image4}
-          alt="Architecture 5"
-        />
-      </div>
-
       <animated.div style={fadeInDelay}>
         <div className={cx("content-2")}>
           <div>
             {/* Row 1 */}
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-5">
                 <h1 className={cx("content-mother")}>
                   {selectedContent.section1.heading}
                 </h1>
@@ -219,14 +218,14 @@ function Home() {
 
             {/* Row 3 */}
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-5">
                 <h1 className={cx("content-mother")}>
                   {selectedContent.section3.heading}
                 </h1>
                 <div className={cx("content-children")}>
                   <p>{selectedContent.section3.text}</p>
                 </div>
-                <button>Liên hệ</button>
+                <button>Contact</button>
               </div>
               <div className="col-md-6">
                 <img

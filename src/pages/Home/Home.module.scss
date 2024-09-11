@@ -35,9 +35,19 @@
 }
 
 .carousel-image {
-  width: 100%;
-  height: 400px; 
+  width: 94%;
+  height: 500px; 
   object-fit: cover; 
+}.carousel-image-1 {
+  width: 93%;
+  height: 230px; 
+  object-fit: cover; 
+  margin-bottom: auto;
+}.carousel-image-2 {
+  width: 93%;
+  height: 230px; 
+  object-fit: cover; 
+  margin-top: 40px;
 }
 
 button {
@@ -94,6 +104,33 @@ button:hover {
     font-weight: 600;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 100px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: white; 
+  font-size: 2rem; 
+  text-align: center;
+}
+
+.video {
+  width: auto; 
+  object-fit: contain; 
+}
+
+
+
 
 
 
@@ -132,8 +169,19 @@ button:hover {
     padding-right: 50px;
     width: 100%;
 }.carousel-image {
-  width: 100%;
-  height: 320px; 
+  width: 94%;
+  height: 400px; 
+  object-fit: cover; 
+}.carousel-image-1 {
+  width: 93%;
+  height: 185px; 
+  object-fit: cover; 
+  margin-bottom: auto;
+}.carousel-image-2 {
+  width: 93%;
+  height: 185px; 
+  object-fit: cover; 
+  margin-top: 30px;
 }.content-children {
     width: 100%;
 }
@@ -149,6 +197,20 @@ button:hover {
 }.carousel-image {
   width: 100%;
   height: 270px; 
+}.carousel-image {
+  width: 94%;
+  height: 400px; 
+  object-fit: cover; 
+}.carousel-image-1 {
+  width: 93%;
+  height: 185px; 
+  object-fit: cover; 
+  margin-bottom: auto;
+}.carousel-image-2 {
+  width: 93%;
+  height: 185px; 
+  object-fit: cover; 
+  margin-top: 30px;
 }
 }
 
@@ -167,8 +229,19 @@ button:hover {
     padding-right: 20px;
     width: 100%;
 }.carousel-image {
-  width: 100%;
-  height: 210px; 
+  width: 95%;
+  height: 350px; 
+  object-fit: cover; 
+}.carousel-image-1 {
+  width: 93%;
+  height: 165px; 
+  object-fit: cover; 
+  margin-bottom: auto;
+}.carousel-image-2 {
+  width: 93%;
+  height: 165px; 
+  object-fit: cover; 
+  margin-top: 20px;
 }
 }
 
